@@ -41,7 +41,7 @@ A Discord Bot wich are developed in the TypeScript language.
 - result : Sends the result of a sports or e-sport match.
 - version : Development version of the bot.
 
-## Events
+# Events
 
 - guildMemberAdd : Detect a user joining the server.
 - guildMemberRemove : Detect a user leaving the server.
