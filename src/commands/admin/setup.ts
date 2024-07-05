@@ -44,8 +44,8 @@ export default command(meta, async ({ interaction }) => {
     }
 
     db.run(`
-        INSERT OR IGNORE INTO servers_settings (guildId, logChannelId, welcomeChannelId, leaveChannelId, welcomeGifUrl, leaveGifUrl, levelChannelID)
-        VALUES (?, NULL, NULL, NULL, 'https://c.tenor.com/A8bNTOeNznQAAAAC/tenor.gif', 'https://c.tenor.com/A8bNTOeNznQAAAAC/tenor.gif', NULL)
+        INSERT OR IGNORE INTO servers_settings (guildId, logChannelId, welcomeChannelId, leaveChannelId, welcomeGifUrl, leaveGifUrl, levelChannelID, levelSystem)
+        VALUES (?, NULL, NULL, NULL, 'https://c.tenor.com/A8bNTOeNznQAAAAC/tenor.gif', 'https://c.tenor.com/A8bNTOeNznQAAAAC/tenor.gif', NULL, 0)
     `, [guildId], (err) => {
         if (err) {
             console.error(`Server initialization error in the database for server ${guildName} (${guildId}). Error`, err)

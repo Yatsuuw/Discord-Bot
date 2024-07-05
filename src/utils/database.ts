@@ -11,7 +11,6 @@ db.run(`
         levelChannelID TEXT,
         welcomeGifUrl TEXT,
         leaveGifUrl TEXT,
-        levelChannelID TEXT,
         levelSystem TEXT
     );
 `)
